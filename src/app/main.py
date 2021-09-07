@@ -7,7 +7,7 @@ import pickle
 import os
 
 colunas = ['tamanho', 'ano', 'garagem']
-modelo = pickle.load(open('../../models/modelo.sav', 'rb'))
+modelo = pickle.load(open('models/modelo.sav', 'rb'))
 
 
 app = Flask(__name__)
@@ -44,4 +44,3 @@ def cotacao():
 
 app.run(debug = True, host='0.0.0.0')
 
-# teste

@@ -1,9 +1,9 @@
-runtime: python
-env: flex
-entrypoint: gunicorn -b :$PORT main:app
+runtime: python                         # qual a linguagem/tecnologia
+env: flex                               # flex ou standard; flex permite que rode sem tantas alterações
+entrypoint: gunicorn -b :$PORT main:app # qual arquivo (main) e o que vai executar (app)
 
 runtime_config:
-  python_version: 3
+  python_version: 3.7
 
 includes:
 - env_vars.yaml
